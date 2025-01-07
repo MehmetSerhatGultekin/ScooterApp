@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScooterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email veya telefon numarası" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ES0-jg-sRA">
+                                <rect key="frame" x="64" y="409" width="265" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkL-1U-KQG">
+                                <rect key="frame" x="64" y="461" width="265" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0b-Sb-ezR">
+                                <rect key="frame" x="90" y="525" width="213" height="33"/>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.4588235021" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş Yap">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesabınız yok mu?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waX-PA-536">
+                                <rect key="frame" x="64" y="664" width="145" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sok-2D-tL8">
+                                <rect key="frame" x="212" y="665" width="81" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydol"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H0b-Sb-ezR" secondAttribute="bottom" constant="260" id="20K-rv-RNZ"/>
+                            <constraint firstItem="H0b-Sb-ezR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="6RA-ju-Gmd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H0b-Sb-ezR" secondAttribute="trailing" constant="90" id="6x9-En-Szj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="waX-PA-536" secondAttribute="bottom" constant="118" id="CCZ-ox-rlE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dkL-1U-KQG" secondAttribute="trailing" constant="64" id="Eqt-bE-gFd"/>
+                            <constraint firstItem="ES0-jg-sRA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="350" id="GVg-UB-1hU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ES0-jg-sRA" secondAttribute="bottom" constant="375" id="JnZ-Bg-zH3"/>
+                            <constraint firstItem="H0b-Sb-ezR" firstAttribute="top" secondItem="dkL-1U-KQG" secondAttribute="bottom" constant="30" id="KUQ-YT-tbq"/>
+                            <constraint firstItem="sok-2D-tL8" firstAttribute="leading" secondItem="waX-PA-536" secondAttribute="trailing" constant="3" id="LET-Sd-dOL"/>
+                            <constraint firstItem="dkL-1U-KQG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="MEu-BG-Yfp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="waX-PA-536" secondAttribute="trailing" constant="184" id="RFa-XT-Flo"/>
+                            <constraint firstItem="waX-PA-536" firstAttribute="top" secondItem="H0b-Sb-ezR" secondAttribute="bottom" constant="106" id="YOd-FR-tsh"/>
+                            <constraint firstItem="waX-PA-536" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="YZ5-vC-7O4"/>
+                            <constraint firstItem="ES0-jg-sRA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="bzh-3S-XJL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sok-2D-tL8" secondAttribute="trailing" constant="100" id="feY-Tc-hNY"/>
+                            <constraint firstItem="dkL-1U-KQG" firstAttribute="top" secondItem="ES0-jg-sRA" secondAttribute="bottom" constant="18" id="jdF-3s-pGY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sok-2D-tL8" secondAttribute="bottom" constant="118" id="lVc-Zh-MYz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dkL-1U-KQG" secondAttribute="bottom" constant="323" id="sax-Y8-tb7"/>
+                            <constraint firstItem="sok-2D-tL8" firstAttribute="top" secondItem="H0b-Sb-ezR" secondAttribute="bottom" constant="107" id="tf4-WU-bDe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ES0-jg-sRA" secondAttribute="trailing" constant="64" id="u5d-of-QI0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTF" destination="ES0-jg-sRA" id="bux-Hs-ch1"/>
+                        <outlet property="logInButton" destination="H0b-Sb-ezR" id="MB0-EX-jVO"/>
+                        <outlet property="passwordTF" destination="dkL-1U-KQG" id="Ees-1c-wdb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+</document>

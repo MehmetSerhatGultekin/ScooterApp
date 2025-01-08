@@ -13,6 +13,7 @@
 		D1AD4F012D2D66DD0068E01A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D1AD4F002D2D66DD0068E01A /* Base */; };
 		D1AD4F032D2D66DD0068E01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1AD4F022D2D66DD0068E01A /* Assets.xcassets */; };
 		D1AD4F062D2D66DD0068E01A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D1AD4F052D2D66DD0068E01A /* Base */; };
+		D1AD4F102D2D72060068E01A /* signInScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AD4F0F2D2D72060068E01A /* signInScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D1AD4F022D2D66DD0068E01A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1AD4F052D2D66DD0068E01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1AD4F072D2D66DD0068E01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AD4F0F2D2D72060068E01A /* signInScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D1AD4EF92D2D66DD0068E01A /* AppDelegate.swift */,
 				D1AD4EFB2D2D66DD0068E01A /* SceneDelegate.swift */,
 				D1AD4EFD2D2D66DD0068E01A /* logInScreenVC.swift */,
+				D1AD4F0F2D2D72060068E01A /* signInScreenVC.swift */,
 				D1AD4EFF2D2D66DD0068E01A /* Main.storyboard */,
 				D1AD4F022D2D66DD0068E01A /* Assets.xcassets */,
 				D1AD4F042D2D66DD0068E01A /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1AD4F102D2D72060068E01A /* signInScreenVC.swift in Sources */,
 				D1AD4EFE2D2D66DD0068E01A /* logInScreenVC.swift in Sources */,
 				D1AD4EFA2D2D66DD0068E01A /* AppDelegate.swift in Sources */,
 				D1AD4EFC2D2D66DD0068E01A /* SceneDelegate.swift in Sources */,

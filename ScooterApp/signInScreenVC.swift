@@ -17,11 +17,14 @@ class signInScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.setHidesBackButton(true, animated: true)
+       // self.navigationItem.setHidesBackButton(true, animated: true)
         registerButton.layer.cornerRadius = registerButton.frame.height / 2
     }
     
-
+    @IBAction func signInTapped(_ sender: Any) {
+        
+    }
+    
   
 
 }

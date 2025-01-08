@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Map ScreenVC-->
         <scene sceneID="z1y-Kn-qwo">
             <objects>
-                <viewController id="Ojf-3T-e3r" sceneMemberID="viewController">
+                <viewController id="Ojf-3T-e3r" customClass="MapScreenVC" customModule="ScooterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CrD-Yw-d8j">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="R0v-ei-SRT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="1kV-OV-wIS" firstAttribute="trailing" secondItem="R0v-ei-SRT" secondAttribute="trailing" id="5vK-PP-Gm6"/>
                             <constraint firstItem="R0v-ei-SRT" firstAttribute="bottom" secondItem="1kV-OV-wIS" secondAttribute="bottom" constant="270" id="Hpx-ib-Zxf"/>
@@ -112,6 +112,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j6J-9N-pMw"/>
+                    <connections>
+                        <outlet property="mapView" destination="1kV-OV-wIS" id="UAb-lf-tui"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHw-Z7-QKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,6 +154,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Kayıt Ol"/>
+                                <connections>
+                                    <action selector="signInTapped:" destination="o7V-jh-Xz0" eventType="touchUpInside" id="n1j-tm-gAb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dLw-gp-pdi"/>
@@ -211,8 +217,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

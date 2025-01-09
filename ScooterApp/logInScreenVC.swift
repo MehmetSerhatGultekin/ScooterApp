@@ -14,10 +14,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        logInButton.layer.cornerRadius = logInButton.frame.height / 2
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tapGesture)
     }
 
-
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        logInButton.layer.cornerRadius = 6
+    }
+    
+    @objc private func handleTap() {
+        self.view.endEditing(true)
+    }
 }
 

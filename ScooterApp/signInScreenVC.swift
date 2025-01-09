@@ -18,6 +18,12 @@ class signInScreenVC: UIViewController {
         super.viewDidLoad()
         
        // self.navigationItem.setHidesBackButton(true, animated: true)
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
         registerButton.layer.cornerRadius = registerButton.frame.height / 2
     }
     
